@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elvis Chen | AI 應用與全端開發者</title>
+  <meta name="description" content="Elvis Chen 的個人網站 — 專注於 AI Agent、Google Apps Script 自動化、互動式資料視覺化與 Web 應用開發。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background Glow -->
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-dot"></span>
+        <span>Elvis<span class="brand-accent">.dev</span></span>
+      </a>
+      <nav class="nav-links" aria-label="主導覽列">
+        <a href="#about">關於我</a>
+        <a href="#skills">專業技能</a>
+        <a href="#projects">精選專案</a>
+        <a href="#experience">經歷</a>
+        <a href="#contact">聯絡方式</a>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="btn btn-sm btn-outline" id="nav-open-chat">
+          <span>🤖</span> 問問 AI 客服
+        </button>
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="開啟選單">
+          ☰
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#about">關於我</a>
+      <a href="#skills">專業技能</a>
+      <a href="#projects">精選專案</a>
+      <a href="#experience">經歷</a>
+      <a href="#contact">聯絡方式</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content">
+        <div class="badge">
+          <span class="badge-pulse"></span>
+          開放專案合作與技術交流
+        </div>
+        <h1>
+          你好，我是 <span class="gradient-text">Elvis Chen</span><br />
+          打造 AI 與自動化驅動的網頁體驗
+        </h1>
+        <p class="hero-desc">
+          專注於 <strong>AI Agent 整合</strong>、<strong>Google Apps Script 自動化工作流</strong>、以及<strong>互動式資料視覺化</strong>。我喜歡把複雜的流程變成直覺、好用的數位產品。
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">瀏覽精選專案</a>
+          <a href="#contact" class="btn btn-ghost">與我聯絡</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">5+ 年</span>
+            <span class="stat-label">開發與自動化經驗</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Web / AI 實驗專案</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">雲端輕量化架構</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="code-window">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-title">profile.json</span>
+          </div>
+          <pre class="code-body"><code>{
+  "name": "Elvis Chen (陳柏宇)",
+  "role": "AI & Full-Stack Builder",
+  "location": "Taichung, Taiwan",
+  "focus": [
+    "LLM / OpenRouter Agents",
+    "Google Apps Script",
+    "Data Visualization",
+    "Interactive Web Apps"
+  ],
+  "status": "Building cool things 🚀"
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section container">
+      <div class="section-header">
+        <span class="section-tag">ABOUT ME</span>
+        <h2>關於我</h2>
+        <p>結合工程思維與產品設計感，讓 AI 與自動化真正落地到日常工作與商業場景。</p>
+      </div>
+      <div class="about-grid">
+        <div class="glass-card">
+          <div class="card-icon">⚡</div>
+          <h3>敏捷原型與全端開發</h3>
+          <p>擅長使用現代化前端技術與無伺服器架構（GitHub Pages + Google Apps Script），在短時間內將想法轉化為可上線的產品。</p>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon">🧠</div>
+          <h3>LLM 與 AI 客服整合</h3>
+          <p>熟悉 OpenRouter、Claude、Gemini 等模型串接，設計具備上下文記憶、Reasoning 推理能力與領域知識的智慧助理。</p>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon">📊</div>
+          <h3>資料視覺化與儀表板</h3>
+          <p>熱衷於將龐雜的營運、經濟或感測器數據，轉換成清晰易讀的互動式圖表與即時監控介面。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section container">
+      <div class="section-header">
+        <span class="section-tag">SKILLS</span>
+        <h2>專業技能</h2>
+        <p>從前端介面、雲端腳本到 AI 模型串接的完整工具箱。</p>
+      </div>
+      <div class="skills-grid">
+        <div class="glass-card skill-group">
+          <h3>前端與視覺化</h3>
+          <div class="chip-list">
+            <span class="chip">HTML5 / CSS3</span>
+            <span class="chip">JavaScript (ES6+)</span>
+            <span class="chip">Responsive UI</span>
+            <span class="chip">Canvas / 3D Web</span>
+            <span class="chip">Dashboard Design</span>
+          </div>
+        </div>
+        <div class="glass-card skill-group">
+          <h3>AI 與自動化</h3>
+          <div class="chip-list">
+            <span class="chip">OpenRouter API</span>
+            <span class="chip">Claude / Gemini</span>
+            <span class="chip">Google Apps Script</span>
+            <span class="chip">LINE Notify / Webhook</span>
+            <span class="chip">Prompt Engineering</span>
+          </div>
+        </div>
+        <div class="glass-card skill-group">
+          <h3>資料分析與部署</h3>
+          <div class="chip-list">
+            <span class="chip">Python</span>
+            <span class="chip">R Data Viz</span>
+            <span class="chip">RESTful APIs</span>
+            <span class="chip">GitHub Pages</span>
+            <span class="chip">Google Workspace</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+      <div class="section-header">
+        <span class="section-tag">PROJECTS</span>
+        <h2>精選專案</h2>
+        <p>近期開發的代表性系統與互動實驗作品。</p>
+      </div>
+      <div class="projects-grid">
+        <article class="glass-card project-card">
+          <div class="project-top">
+            <span class="project-type">AI + GAS</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>智慧個人客服機器人系統</h3>
+          <p>以 GitHub Pages 為前端、Google Apps Script 為安全代理後端，串接 OpenRouter Claude Haiku 5.5 並支援 Reasoning 推理延續。</p>
+          <div class="chip-list">
+            <span class="chip-sm">OpenRouter</span>
+            <span class="chip-sm">GAS</span>
+            <span class="chip-sm">Vanilla JS</span>
+          </div>
+        </article>
+
+        <article class="glass-card project-card">
+          <div class="project-top">
+            <span class="project-type">Dashboard</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>即時營運與市場數據儀表板</h3>
+          <p>整合股市、配送調度與多維度經濟指標，提供即時篩選、趨勢分析與視覺化決策支援。</p>
+          <div class="chip-list">
+            <span class="chip-sm">Data Viz</span>
+            <span class="chip-sm">REST API</span>
+            <span class="chip-sm">UI/UX</span>
+          </div>
+        </article>
+
+        <article class="glass-card project-card">
+          <div class="project-top">
+            <span class="project-type">Automation</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>企業雲端打卡與表單通知系統</h3>
+          <p>結合 Google 表單、試算表與 Apps Script，自動處理員工出勤紀錄、訂單通知與異常提醒，大幅降低人工作業時間。</p>
+          <div class="chip-list">
+            <span class="chip-sm">Apps Script</span>
+            <span class="chip-sm">Sheets API</span>
+            <span class="chip-sm">Webhook</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section container">
+      <div class="section-header">
+        <span class="section-tag">EXPERIENCE</span>
+        <h2>經歷與里程碑</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item glass-card">
+          <div class="timeline-date">2024 — 現在</div>
+          <h3>獨立 AI 應用與自動化開發者</h3>
+          <p>協助團隊與個人建置 LLM 智慧助理、Google Workspace 自動化流程與輕量化雲端 Web 系統。</p>
+        </div>
+        <div class="timeline-item glass-card">
+          <div class="timeline-date">2022 — 2024</div>
+          <h3>資料視覺化與前端工程專案</h3>
+          <p>設計多款互動式數據儀表板、3D 網頁視覺實驗與教學平台，提升資料解讀與使用者參與度。</p>
+        </div>
+        <div class="timeline-item glass-card">
+          <div class="timeline-date">2020 — 2022</div>
+          <h3>資訊系統整合與流程優化</h3>
+          <p>導入無伺服器自動化腳本與表單串接，協助日常行政與營運流程數位轉型。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container">
+      <div class="contact-box glass-card">
+        <div class="contact-info">
+          <span class="section-tag">CONTACT</span>
+          <h2>有想法想一起實現嗎？</h2>
+          <p>歡迎透過 GitHub 與我交流，或直接點擊右下角的「🤖 AI 小客服」快速了解我的背景與合作方式！</p>
+        </div>
+        <div class="contact-actions">
+          <a href="https://github.com/nutcelvischen-jpg" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            前往 GitHub
+          </a>
+          <button type="button" class="btn btn-outline" id="contact-open-chat">
+            與 AI 客服對話
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Elvis Chen. Built with GitHub Pages &amp; OpenRouter AI.</p>
+      <p class="footer-note">右下角可設定您的 GAS Web App 網址以啟用即時 AI 對話</p>
+    </div>
+  </footer>
+
+  <!-- Floating Robot Chatbot Widget -->
+  <div class="chatbot-widget" id="chatbot-widget">
+    <!-- Chat Window -->
+    <div class="chat-window" id="chat-window" aria-hidden="true">
+      <div class="chat-header">
+        <div class="chat-header-left">
+          <div class="bot-avatar-sm" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7" y="11" width="26" height="21" rx="7" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+              <line x1="20" y1="4" x2="20" y2="11" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="20" cy="4" r="2.5" fill="#22D3EE"/>
+              <circle cx="15" cy="20" r="2.5" fill="#38BDF8"/>
+              <circle cx="25" cy="20" r="2.5" fill="#38BDF8"/>
+              <path d="M15 26C16.5 27.5 23.5 27.5 25 26" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="chat-title">Elvis AI 小客服</div>
+            <div class="chat-status" id="chat-status">
+              <span class="status-dot" id="status-dot"></span>
+              <span id="status-text">尚未設定 GAS 網址</span>
+            </div>
+          </div>
+        </div>
+        <div class="chat-header-actions">
+          <button type="button" class="icon-btn" id="btn-settings" title="設定 GAS 網址" aria-label="設定 GAS 網址">
+            ⚙️
+          </button>
+          <button type="button" class="icon-btn" id="btn-clear-chat" title="清除對話紀錄" aria-label="清除對話紀錄">
+            🗑️
+          </button>
+          <button type="button" class="icon-btn" id="btn-close-chat" title="關閉視窗" aria-label="關閉視窗">
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Settings Panel (Hidden by default) -->
+      <div class="chat-settings" id="chat-settings" hidden>
+        <div class="settings-title">⚙️ Google Apps Script 後端設定</div>
+        <p class="settings-desc">
+          請貼上你部署好的 GAS Web App 網址（結尾通常為 <code>/exec</code>），設定會自動儲存在瀏覽器中。
+        </p>
+        <label for="gas-url-input" class="settings-label">GAS Web App URL</label>
+        <input
+          type="url"
+          id="gas-url-input"
+          class="settings-input"
+          placeholder="https://script.google.com/macros/s/xxxx/exec"
+          autocomplete="off"
+        />
+        <div class="settings-actions">
+          <button type="button" class="btn btn-sm btn-primary" id="btn-save-gas">儲存設定</button>
+          <button type="button" class="btn btn-sm btn-outline" id="btn-test-gas">測試連線</button>
+          <button type="button" class="btn btn-sm btn-ghost" id="btn-close-settings">返回對話</button>
+        </div>
+        <div class="settings-feedback" id="settings-feedback"></div>
+      </div>
+
+      <!-- Messages Area -->
+      <div class="chat-messages" id="chat-messages">
+        <div class="msg msg-bot">
+          <div class="msg-bubble">
+            嗨！我是 Elvis 的 AI 小客服 🤖<br />
+            你可以問我關於 Elvis 的經歷、技能、專案作品，或任何技術問題！
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Prompts -->
+      <div class="quick-prompts" id="quick-prompts">
+        <button type="button" class="quick-chip" data-prompt="請幫我介紹一下 Elvis Chen 的背景與專長">介紹 Elvis</button>
+        <button type="button" class="quick-chip" data-prompt="他有哪些代表性的專案作品？">精選專案</button>
+        <button type="button" class="quick-chip" data-prompt="如果想找他合作，該怎麼聯絡？">合作方式</button>
+      </div>
+
+      <!-- Input Area -->
+      <form class="chat-input-area" id="chat-form">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="輸入訊息..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="send-btn" id="btn-send" aria-label="送出訊息">
+          ➤
+        </button>
+      </form>
+    </div>
+
+    <!-- Floating Robot Toggle Button -->
+    <button type="button" class="robot-fab" id="robot-fab" aria-label="開啟 AI 小客服">
+      <span class="fab-ping"></span>
+      <svg class="robot-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="24" y1="5" x2="24" y2="12" stroke="#E0F2FE" stroke-width="2.6" stroke-linecap="round"/>
+        <circle cx="24" cy="5" r="3" fill="#22D3EE"/>
+        <rect x="10" y="12" width="28" height="24" rx="9" fill="#0F172A" stroke="#E0F2FE" stroke-width="2.4"/>
+        <rect x="6" y="19" width="4" height="10" rx="2" fill="#38BDF8"/>
+        <rect x="38" y="19" width="4" height="10" rx="2" fill="#38BDF8"/>
+        <circle cx="18.5" cy="22.5" r="3" fill="#38BDF8"/>
+        <circle cx="29.5" cy="22.5" r="3" fill="#38BDF8"/>
+        <path d="M18 29.5C19.8 31.5 28.2 31.5 30 29.5" stroke="#22D3EE" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
